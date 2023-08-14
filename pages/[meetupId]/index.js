@@ -47,6 +47,7 @@ export async function getStaticProps(context) {
     'mongodb+srv://alex:il0vec0ldplay@cluster0.khm5qgm.mongodb.net/?retryWrites=true&w=majority'
   );
   const db = client.db();
+  new ObjectId(meetupId);
 
   const meetupsCollection = db.collection('meetups');
 
